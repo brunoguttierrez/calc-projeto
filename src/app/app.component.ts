@@ -30,8 +30,16 @@ export class AppComponent implements OnInit {
 
   write(value: string) :void {
 
-    value === 'Enter' ? (this.valueTotal(), value = '') : '';
-    value === 'Backspace' ? (this.erase(), value = '') : '';
+    if(value === 'Enter') {
+      this.valueTotal()
+      return;
+    } else if (value === 'Backspace') {
+      this.erase()
+      return;
+    }
+
+    value === 'Enter' ? this.valueTotal() : '';
+    value === 'Backspace' ? this.erase() : '';
 
     if(this.currentValue === '0') {
       this.currentValue = value //!== undefined ? value : value

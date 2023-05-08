@@ -5,22 +5,14 @@
   font-family: Helvetica;
 }
 
-body {
-  background-color: #084D6E;
-  padding: 3em;
-  display: flex;
-  align-items: flex;
-  justify-content: center;
-}
-
-#calc {
+  #calc {
   width: 330px;
   padding: .5em;
   display: flex;
   color: #000;
   flex-direction: column;
   background-color: #c4c4c4;
-  align-items:flex-end;
+  //align-items:flex-end;
   border: 1px solid #fff;
 }
 
@@ -37,7 +29,7 @@ body {
 
 #current-operation,
 #previous-operation {
-  overflow-wrap: break-word;
+  overflow-wrap: break-word !important;
   min-height: 1.6em;
 }
 

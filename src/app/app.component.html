@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div id="calc">
+<div id="calc">
     <h3>Calculadora</h3>
     <div id="operations">
       <div id="previous-operation" > {{ previousOperation }}</div>
       <div id="current-operation">{{ currentValue }}</div>
     </div>
     <div class="btn">
-
       <button>CE</button>
       <button (click)="clear()">C</button>
       <button (click)="erase()">DEL</button>
@@ -36,6 +26,4 @@
       <button id="equal-btn" (click)="valueTotal()">=</button>
       <button (click)="operation('+')">+</button>
     </div>
-  </div>
-</body>
-</html>
+</div>
